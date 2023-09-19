@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+  body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+    color: red;
+}
+  
+p {
+    font-size: 16 px;
+    line-height: 30.4 px; 
+}
+
+p,span,label,input,textarea,li {
+    color: purple;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+/* End Preparation */
+  
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+  
+@media screen and (max-width: 1200px) {
+    .main-container {
+      width: 90%;
+    }
+}
+  
+  
+  /* Titles */
+  .section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+  
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+  
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--lineColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+  
+/* --- Logo and Navigation Menu --- */
+nav {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: rgba(120, 126, 133, 0.2) 0px 8px 24px;
+    padding: 2em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+  }
+  .nav img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    text-align: center;
+  }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+
+/* Nav menu */
+nav ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+nav ul li a {
+    color: black;
+  }
